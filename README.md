@@ -6,7 +6,6 @@
 
 [![Linux](https://img.shields.io/badge/Linux-CachyOS-00E5FF?style=for-the-badge\&logo=linux\&logoColor=white)](https://cachyos.org/)
 [![Python](https://img.shields.io/badge/Python-AI%20Tooling-D946EF?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
-[![Rust](https://img.shields.io/badge/Rust-Systems-E6EDF3?style=for-the-badge\&logo=rust\&logoColor=111111)](https://www.rust-lang.org/)
 [![CUDA](https://img.shields.io/badge/CUDA-GPU%20Inference-00E5FF?style=for-the-badge\&logo=nvidia\&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
 
 **I like making heavyweight AI models behave on hardware they were never supposed to fit on.**
