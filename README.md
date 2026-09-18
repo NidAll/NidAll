@@ -107,8 +107,6 @@ My completely scientific rating scale:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=NidAll&show_icons=true&hide_border=true&bg_color=00000000&title_color=00E5FF&text_color=E6EDF3&icon_color=D946EF" height="165" alt="NidAll GitHub stats" />
-
 <img src="https://streak-stats.demolab.com?user=NidAll&hide_border=true&background=00000000&ring=00E5FF&fire=D946EF&currStreakLabel=00E5FF&sideLabels=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B949E" height="165" alt="NidAll GitHub streak" />
 
 </div>
