@@ -1,122 +1,100 @@
-<div align="center">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/header-compact.svg" />
+  <img src="assets/header.svg" width="100%" alt="NidAll. Big models. Finite memory. Local AI and systems engineering." />
+</picture>
 
-# Nidhal // NidAll
+<p align="center">
+  <strong>Computer engineer building local AI tools, native model runtimes, and Linux software.</strong><br />
+  I work where model architecture meets quantization, kernels, and memory limits.
+</p>
 
-`computer engineer · AI systems · Linux · inference optimization`
+<p align="center">
+  <a href="#selected-projects">Selected projects</a> &nbsp;·&nbsp;
+  <a href="#more-to-explore">More to explore</a> &nbsp;·&nbsp;
+  <a href="https://github.com/NidAll?tab=repositories">All repositories</a>
+</p>
 
-[![Linux](https://img.shields.io/badge/Linux-CachyOS-00E5FF?style=for-the-badge\&logo=linux\&logoColor=white)](https://cachyos.org/)
-[![Python](https://img.shields.io/badge/Python-AI%20Tooling-D946EF?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
-[![CUDA](https://img.shields.io/badge/CUDA-GPU%20Inference-00E5FF?style=for-the-badge\&logo=nvidia\&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
+## Selected projects
 
-**I like making heavyweight AI models behave on hardware they were never supposed to fit on.**
+<table>
+<tr>
+<td valign="top">
 
-</div>
+<sub>01 / MODEL COMPRESSION</sub>
+<h3><a href="https://github.com/NidAll/comfyui-native-quantizer">ComfyUI Native Quantizer ↗</a></h3>
 
----
+Convert diffusion checkpoints and text encoders into native ComfyUI formats. Architecture-aware tensor selection, bounded conversion memory, optional MSE optimization, and output validation.
 
-## ⚡ What I build
+<p><code>Python</code> <code>INT8 / INT4 / FP8</code></p>
 
-| Project                                                                          | What it does                                                                                       | Focus                                                         |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| [**ComfyUI-Qwen3-TTS-Quant**](https://github.com/NidAll/ComfyUI-Qwen3-TTS-Quant) | Native ComfyUI runtime and streaming quantization toolkit for the full Qwen3-TTS 12 Hz 1.7B family | W8A8 ConvRot · packed INT8 · CUDA graphs · static KV caches   |
-| [**comfyui-mixed-quantizer**](https://github.com/NidAll/comfyui-mixed-quantizer) | Diffusion and text-encoder quantization with stable W4A8 and experimental mixed-precision planning | W4A8 · W4A4 · INT8 · validation · memory-aware planning       |
-| [**OpenCode 2 support for Ask**](https://github.com/benja/ask/pull/5)            | OpenCode 2 compatibility work for the Ask terminal AI client                                       | Rust · CLI integration · permissions · read-only agent design |
+<a href="https://github.com/NidAll/comfyui-native-quantizer#quick-start">Quick start</a> · <a href="https://github.com/NidAll/comfyui-native-quantizer/releases">Releases</a>
 
-I spend a lot of time around the point where **model architecture, kernels, quantization, memory pressure, and runtime behavior** collide.
+</td>
+</tr>
+<tr>
+<td valign="top">
 
----
+<sub>02 / LINUX SYSTEMS</sub>
+<h3><a href="https://github.com/NidAll/forgeusb">ForgeUSB ↗</a></h3>
 
-## 🧠 Engineering interests
+A native Linux boot-media writer with a desktop app and CLI. Reviewed write plans, explicit device confirmation, a separate privilege helper, and full source-byte read-back.
 
-**AI systems:** quantization, low-VRAM inference, CUDA kernels, memory residency, KV-cache design, graph capture, attention backends, and runtime optimization.
+<p><code>Rust</code> <code>Iced</code> <code>Polkit</code></p>
 
-**Inference:** local LLMs, diffusion models, speech generation, multimodal systems, custom quantized runtimes, and squeezing maximum performance from constrained hardware.
+<a href="https://github.com/NidAll/forgeusb#screenshots">Screenshots</a> · <a href="https://github.com/NidAll/forgeusb/blob/main/docs/compatibility.md">Compatibility &amp; release limits</a>
 
-**Linux:** rolling-release systems, terminal tooling, performance engineering, containers, and understanding the stack all the way down.
+</td>
+</tr>
+<tr>
+<td valign="top">
 
-**Software engineering:** Rust, Python, systems integration, reproducible tooling, testing, and contributing fixes upstream.
+<sub>03 / IMAGE UNDERSTANDING</sub>
+<h3><a href="https://github.com/NidAll/ComfyUI-Anima-Prompt-Architect">Anima Prompt Architect ↗</a></h3>
 
----
+Turn a reference image into Anima prompts locally. PixAI tagging and native MiniCPM INT8 inference produce positive and negative prompts, structured analysis, and tag probabilities.
 
-## 🛠️ Current environment
+<p><code>ComfyUI</code> <code>Vision + language</code></p>
 
-```text
-OS          CachyOS
-Desktop     KDE Plasma
-Terminal    Kitty
-Shell       Fish
+<a href="https://github.com/NidAll/ComfyUI-Anima-Prompt-Architect#install">Setup &amp; example workflow</a> · <a href="https://github.com/NidAll/ComfyUI-Anima-Prompt-Architect/releases">Releases</a>
 
-AI          ComfyUI · llama.cpp · PyTorch
-GPU Stack   CUDA · FlashAttention · Comfy Kitchen
-Languages   Python · Rust · C/C++
-Dev         Git · GitHub · Docker · OpenCode
-Terminal    micro · mdfried · ltop · lazydocker
-```
+</td>
+</tr>
+<tr>
+<td valign="top">
 
-I like tools that are **fast, composable, transparent, and close to the system**.
+<sub>04 / SPEECH INFERENCE</sub>
+<h3><a href="https://github.com/NidAll/ComfyUI-Qwen3-TTS-Quant">Qwen3-TTS Quant ↗</a></h3>
 
----
+Voice design, voice cloning, and named-speaker generation for the Qwen3-TTS 1.7B family. Packed W8A8 ConvRot inference, static KV caches, and CUDA graph support with runtime diagnostics.
 
-## 🔬 What I enjoy optimizing
+<p><code>Python</code> <code>Comfy Kitchen</code> <code>CUDA</code></p>
 
-```text
-model
-  ↓
-architecture
-  ↓
-quantization
-  ↓
-kernel
-  ↓
-memory layout
-  ↓
-runtime
-  ↓
-benchmark
-  ↓
-repeat
-```
+<a href="https://github.com/NidAll/ComfyUI-Qwen3-TTS-Quant#importable-workflows">Example workflows</a> · <a href="https://github.com/NidAll/ComfyUI-Qwen3-TTS-Quant#attention-and-cuda-graphs">Runtime details</a>
 
-If a model technically *shouldn't* fit, that usually makes it more interesting.
+</td>
+</tr>
+</table>
 
----
+## More to explore
 
-## 🐧 Beyond code
+- [**Stripe homepage reconstruction**](https://github.com/NidAll/stripe-homepage-reconstruction) · An unofficial visual study using Astro, GSAP, and a Three.js shader hero. Includes responsive screenshot comparisons and documented limits.
+- [**Ming Image Prompt Builder**](https://github.com/NidAll/comfyui-ming-image-prompt-builder) · Draw regions, place exact text, and export structured Ming prompts inside ComfyUI.
+- [**Qwen-Image 2.1 Turbo LoRA Tools**](https://github.com/NidAll/qwen-image21-lora-layout-converter) · Experimental local adaptation of base-model LoRAs for Turbo using a reusable transfer profile.
 
-Linux is the playground. AI systems are the obsession.
+<details>
+<summary><strong>Earlier quantization work &amp; an upstream contribution</strong></summary>
 
-I also enjoy **philosophy, mathematics, anime & manga, storytelling**, and two objectively excellent animals:
+- [ComfyUI Mixed Quantizer](https://github.com/NidAll/comfyui-mixed-quantizer) is my earlier single-file converter, with stable W4A8 conversion and experimental mixed-precision planning.
+- [OpenCode 2 support for Ask](https://github.com/benja/ask/pull/5) is an open pull request for compatibility with the terminal AI client.
 
-```text
-   _~_        /\_/\
-  (o o)      ( o.o )
- /  V  \      > ^ <
-/(  _  )\
-  ^^ ^^
+</details>
 
- penguin       cat
-```
+## How I work
 
-My completely scientific rating scale:
+I like following an inference problem through the whole stack: tensor layout, kernel dispatch, attention, memory residency, and the runtime that ties them together. I care about reproducible conversions, useful diagnostics, and benchmarks that explain their limits.
 
-**Ω > Z > S > A > B > C > D > F**
+**Tools I work with:** Python, Rust, C/C++, PyTorch, CUDA, ComfyUI, llama.cpp, and Linux.
 
----
+Away from code: philosophy, mathematics, anime and manga, storytelling, penguins, and cats.
 
-## 📊 GitHub
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=NidAll&hide_border=true&background=00000000&ring=00E5FF&fire=D946EF&currStreakLabel=00E5FF&sideLabels=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B949E" height="165" alt="NidAll GitHub streak" />
-
-</div>
-
----
-
-<div align="center">
-
-### Build it. Measure it. Understand why it works.
-
-`Linux` · `AI` · `CUDA` · `Quantization` · `Systems`
-
-</div>
+<p align="center"><sub>If a model technically shouldn't fit, that usually makes it more interesting.</sub></p>

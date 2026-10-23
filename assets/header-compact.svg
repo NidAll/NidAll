@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="410" viewBox="0 0 700 410" role="img" aria-labelledby="title desc">
+  <title id="title">NidAll: local AI and systems engineering</title>
+  <desc id="desc">Big models. Finite memory. A cyan and violet illustration connects a dense weight matrix to a compact representation.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#101c2d" />
+      <stop offset=".58" stop-color="#0c1320" />
+      <stop offset="1" stop-color="#18132c" />
+    </linearGradient>
+    <linearGradient id="accent" x2="1" y2=".3">
+      <stop stop-color="#77f2db" />
+      <stop offset=".5" stop-color="#7bc7ff" />
+      <stop offset="1" stop-color="#c4a0ff" />
+    </linearGradient>
+    <linearGradient id="line" x2="1">
+      <stop stop-color="#77f2db" stop-opacity=".04" />
+      <stop offset=".5" stop-color="#77f2db" stop-opacity=".5" />
+      <stop offset="1" stop-color="#b58dff" stop-opacity=".12" />
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#6a4baa" stop-opacity=".25" />
+      <stop offset="1" stop-color="#6a4baa" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#90b6d8" stroke-opacity=".06" />
+    </pattern>
+    <pattern id="matrix" width="21" height="21" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" x="2" y="2" rx="3" fill="#77f2db" fill-opacity=".45" />
+    </pattern>
+    <pattern id="packed" width="15" height="15" patternUnits="userSpaceOnUse">
+      <rect width="11" height="11" x="2" y="2" rx="2" fill="#c4a0ff" fill-opacity=".8" />
+    </pattern>
+    <clipPath id="frame"><rect x="1" y="1" width="698" height="408" rx="24" /></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <path fill="url(#background)" d="M0 0h1280v440H0z" />
+    <path fill="url(#grid)" d="M0 0h1280v440H0z" />
+    <ellipse cx="1040" cy="210" rx="400" ry="310" fill="url(#glow)" />
+    <path d="M0 0h1280" stroke="url(#accent)" stroke-width="4" />
+    <g fill="none" stroke="url(#line)">
+      <path d="M600 420C730 420 710 40 850 40s90 330 430 330" />
+      <path d="M622 440C748 440 730 59 870 59s90 330 430 330" />
+      <path d="M645 460C770 460 751 78 891 78s90 330 430 330" />
+      <path d="M668 480C792 480 772 97 912 97s90 330 430 330" />
+      <path d="M691 500C814 500 793 116 933 116s90 330 430 330" />
+      <path d="M714 520C836 520 814 135 954 135s90 330 430 330" />
+      <path d="M737 540C858 540 835 154 975 154s90 330 430 330" />
+    </g>
+    <g font-family="DejaVu Sans, Arial, sans-serif">
+      <circle cx="62" cy="53" r="4" fill="#77f2db" />
+      <text x="77" y="58" fill="#aac0d4" font-size="13" font-weight="600" letter-spacing="3">LOCAL AI / SYSTEMS ENGINEERING</text>
+      <text x="56" y="153" fill="#f0f6ff" font-size="86" font-weight="800" letter-spacing="-5">NIDALL<tspan fill="#77f2db">.</tspan></text>
+      <text x="60" y="231" fill="#e3ecf8" font-size="42" font-weight="600" letter-spacing="-1.6">Big models.</text>
+      <text x="60" y="282" fill="url(#accent)" font-size="42" font-weight="600" letter-spacing="-1.6">Finite memory.</text>
+      <text x="61" y="329" fill="#9eb2c8" font-size="18">Quantization, native inference &amp; Linux tooling.</text>
+      <path d="M61 372h46" stroke="#77f2db" stroke-width="2" />
+      <text x="123" y="377" fill="#aab9d0" font-size="12" letter-spacing="2">ARCHITECTURE → KERNEL → RUNTIME</text>
+      </g>
+  </g>
+  <rect x=".5" y=".5" width="699" height="409" rx="24" fill="none" stroke="#334057" />
+</svg>

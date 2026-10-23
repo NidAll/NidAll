@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">NidAll: local AI and systems engineering</title>
+  <desc id="desc">Big models. Finite memory. A cyan and violet illustration connects a dense weight matrix to a compact representation.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#101c2d"/>
+      <stop offset=".58" stop-color="#0c1320"/>
+      <stop offset="1" stop-color="#18132c"/>
+    </linearGradient>
+    <linearGradient id="accent" x2="1" y2=".3">
+      <stop stop-color="#77f2db"/>
+      <stop offset=".5" stop-color="#7bc7ff"/>
+      <stop offset="1" stop-color="#c4a0ff"/>
+    </linearGradient>
+    <linearGradient id="line" x2="1">
+      <stop stop-color="#77f2db" stop-opacity=".04"/>
+      <stop offset=".5" stop-color="#77f2db" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#b58dff" stop-opacity=".12"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#6a4baa" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#6a4baa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#90b6d8" stroke-opacity=".06"/>
+    </pattern>
+    <pattern id="matrix" width="21" height="21" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" x="2" y="2" rx="3" fill="#77f2db" fill-opacity=".45"/>
+    </pattern>
+    <pattern id="packed" width="15" height="15" patternUnits="userSpaceOnUse">
+      <rect width="11" height="11" x="2" y="2" rx="2" fill="#c4a0ff" fill-opacity=".8"/>
+    </pattern>
+    <clipPath id="frame"><rect x="1" y="1" width="1278" height="438" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <path fill="url(#background)" d="M0 0h1280v440H0z"/>
+    <path fill="url(#grid)" d="M0 0h1280v440H0z"/>
+    <ellipse cx="1040" cy="210" rx="400" ry="310" fill="url(#glow)"/>
+    <path d="M0 0h1280" stroke="url(#accent)" stroke-width="4"/>
+    <g fill="none" stroke="url(#line)">
+      <path d="M600 420C730 420 710 40 850 40s90 330 430 330"/>
+      <path d="M622 440C748 440 730 59 870 59s90 330 430 330"/>
+      <path d="M645 460C770 460 751 78 891 78s90 330 430 330"/>
+      <path d="M668 480C792 480 772 97 912 97s90 330 430 330"/>
+      <path d="M691 500C814 500 793 116 933 116s90 330 430 330"/>
+      <path d="M714 520C836 520 814 135 954 135s90 330 430 330"/>
+      <path d="M737 540C858 540 835 154 975 154s90 330 430 330"/>
+    </g>
+    <g font-family="DejaVu Sans, Arial, sans-serif">
+      <circle cx="62" cy="53" r="4" fill="#77f2db"/>
+      <text x="77" y="58" fill="#aac0d4" font-size="13" font-weight="600" letter-spacing="3">LOCAL AI / SYSTEMS ENGINEERING</text>
+      <text x="56" y="153" fill="#f0f6ff" font-size="86" font-weight="800" letter-spacing="-5">NIDALL<tspan fill="#77f2db">.</tspan></text>
+      <text x="60" y="231" fill="#e3ecf8" font-size="42" font-weight="600" letter-spacing="-1.6">Big models.</text>
+      <text x="60" y="282" fill="url(#accent)" font-size="42" font-weight="600" letter-spacing="-1.6">Finite memory.</text>
+      <text x="61" y="329" fill="#9eb2c8" font-size="18">Quantization, native inference &amp; Linux tooling.</text>
+      <path d="M61 372h46" stroke="#77f2db" stroke-width="2"/>
+      <text x="123" y="377" fill="#aab9d0" font-size="12" letter-spacing="2">ARCHITECTURE → KERNEL → RUNTIME</text>
+      <g transform="translate(768 78)">
+        <rect width="444" height="278" rx="16" fill="#0b1322" fill-opacity=".9" stroke="#334057"/>
+        <path d="M0 42h444" stroke="#2b354b"/>
+        <circle cx="21" cy="22" r="4" fill="#77f2db"/>
+        <circle cx="37" cy="22" r="4" fill="#7bc7ff"/>
+        <circle cx="53" cy="22" r="4" fill="#c4a0ff"/>
+        <text x="422" y="26" text-anchor="end" fill="#98abc2" font-size="10" letter-spacing="1.8">WEIGHT LAB</text>
+        <text x="30" y="76" fill="#9eb9ce" font-size="11" letter-spacing="1.3">SOURCE WEIGHTS</text>
+        <rect x="30" y="94" width="147" height="126" rx="4" fill="url(#matrix)"/>
+        <rect x="30" y="94" width="147" height="126" rx="4" fill="none" stroke="#77f2db" stroke-opacity=".2"/>
+        <g fill="none" stroke-width="1.5">
+          <path d="M191 118c33 0 23 38 59 38M191 156h59M191 196c33 0 23-40 59-40" stroke="url(#accent)"/>
+          <path d="m241 151 10 5-10 5" stroke="#c4a0ff"/>
+        </g>
+        <text x="274" y="76" fill="#b5a8d6" font-size="11" letter-spacing="1.3">PACKED</text>
+        <rect x="278" y="119" width="90" height="75" rx="4" fill="url(#packed)"/>
+        <rect x="267" y="108" width="112" height="97" rx="10" fill="none" stroke="#c4a0ff" stroke-opacity=".3"/>
+        <path d="M30 240h384" stroke="#2b354b"/>
+        <text x="30" y="262" fill="#8197b0" font-size="10" font-family="DejaVu Sans Mono, monospace">inspect</text>
+        <text x="110" y="262" fill="#77f2db" font-size="11">→</text>
+        <text x="144" y="262" fill="#8197b0" font-size="10" font-family="DejaVu Sans Mono, monospace">convert</text>
+        <text x="223" y="262" fill="#7bc7ff" font-size="11">→</text>
+        <text x="256" y="262" fill="#8197b0" font-size="10" font-family="DejaVu Sans Mono, monospace">validate</text>
+        <circle cx="406" cy="258" r="4" fill="#77f2db"/>
+      </g>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1279" height="439" rx="24" fill="none" stroke="#334057"/>
+</svg>
