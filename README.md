@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="#selected-projects">Selected projects</a> &nbsp;·&nbsp;
-  <a href="#more-to-explore">More to explore</a> &nbsp;·&nbsp;
+  <a href="#user-content-selected-projects">Selected projects</a> &nbsp;·&nbsp;
+  <a href="#user-content-more-to-explore">More to explore</a> &nbsp;·&nbsp;
   <a href="https://github.com/NidAll?tab=repositories">All repositories</a>
 </p>
 
