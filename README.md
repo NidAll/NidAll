@@ -80,6 +80,9 @@ Voice design, voice cloning, and named-speaker generation for the Qwen3-TTS 1.7B
 - [**Stripe homepage reconstruction**](https://github.com/NidAll/stripe-homepage-reconstruction) · An unofficial visual study using Astro, GSAP, and a Three.js shader hero. Includes responsive screenshot comparisons and documented limits.
 - [**Ming Image Prompt Builder**](https://github.com/NidAll/comfyui-ming-image-prompt-builder) · Draw regions, place exact text, and export structured Ming prompts inside ComfyUI.
 - [**Qwen-Image 2.1 Turbo LoRA Tools**](https://github.com/NidAll/qwen-image21-lora-layout-converter) · Experimental local adaptation of base-model LoRAs for Turbo using a reusable transfer profile.
+- [**LuxTTS Gradio**](https://github.com/NidAll/LuxTTS-Gradio) · A local voice-cloning UI for LuxTTS with full advanced controls and a beginner-friendly setup.
+- [**TranslateGemma Studio**](https://github.com/NidAll/TranslateGemma-Studio) · Offline translation on top of llama.cpp with streaming output and long-text chunking.
+- [**PromptStyler Next**](https://github.com/NidAll/ComfyUI-PromptStyler-Next) · A model-aware prompt styling engine for ComfyUI with over a thousand curated styles.
 
 <details>
 <summary><strong>Earlier quantization work &amp; an upstream contribution</strong></summary>
